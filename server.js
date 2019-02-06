@@ -107,7 +107,7 @@ app.use(function(req, res, next) {
 });
 
 app.use('/', routes);
-app.use('/user', user);
+app.use('/myaccount', user);
 // Routes
 require("./routes/frontend")(app);
 // require("./routes/htmlRoutes")(app);

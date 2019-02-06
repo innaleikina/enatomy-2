@@ -6,14 +6,17 @@ var ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn();
 
 // Perform the login, after login Auth0 will redirect to callback
 router.get('/login',
-  passport.authenticate('auth0', {scope: 'openid email profile'}), function (req, res) {
-  res.redirect("/");
-});
+    passport.authenticate('auth0', {
+        scope: 'openid email profile'
+    }),
+    function (req, res) {
+        res.redirect("/myaccount");
+    });
 
 router.get('/logout', (req, res) => {
     req.logout();
     res.redirect('/');
-  });
-  
+});
+
 
 module.exports = router;

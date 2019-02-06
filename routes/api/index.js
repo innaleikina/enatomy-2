@@ -20,7 +20,7 @@ router.get('/login', passport.authenticate('auth0', {
 //redirect to home page after logout
 router.get('/logout', function (req, res) {
     req.logout();
-    res.redirect("https://enatomy.auth0.com/v2/logout/?returnTo=http://localhost:3004");
+    res.redirect("https://enatomy.auth0.com/v2/logout/?returnTo=http://localhost:3004/");
 
 });
 
@@ -31,7 +31,7 @@ router.get('/callback',
         failureRedirect: '/failure'
     }),
     function (req, res) {
-        res.redirect(req.session.returnTo || '/');
+        res.redirect(req.session.returnTo || '/myaccount');
     }
 );
 

@@ -9,4 +9,14 @@ module.exports = function (app) {
     app.get("/store", function (req, res) {
         res.render("store")
     })
+
+    app.get("/cart", function (req, res) {
+        res.render("cart")
+    })
+
+    app.get("/myaccount", function(req, res) {
+        res.render("myaccount", {
+        //   user: user
+        });
+      });
 };

@@ -1,0 +1,26 @@
+html {
+    font-family: "Helvetica";
+}
+
+/* NAVIGATION STYLING  */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px rgb(82, 82, 82) solid;
+    margin-bottom: 30px;
+    /* border:1px red solid; */
+}
+
+
+
+.nav-items-wrap{
+    /* border:1px red solid; */
+    display:flex;
+    width:300px;
+    justify-content:space-between;
+    padding-right:10px;
+    list-style: none;
+}

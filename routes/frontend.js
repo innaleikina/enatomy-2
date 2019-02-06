@@ -1,4 +1,5 @@
 //var db = require("../models");
+var user;
 
 module.exports = function (app) {
 
@@ -16,7 +17,9 @@ module.exports = function (app) {
 
     app.get("/myaccount", function(req, res) {
         res.render("myaccount", {
-        //   user: user
+          text: "random name"
         });
       });
+
+  
 };

@@ -33,6 +33,6 @@
     "passport-auth0": "^1.1.0",
     "passport-local-sequelize": "^0.8.0",
     "request": "^2.88.0",
-    "sequelize": "^4.42.0"
+    "sequelize": "^5.15.1"
   }
 }
